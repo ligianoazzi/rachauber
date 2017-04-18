@@ -1,7 +1,3 @@
-
-
-
-
     <md-toolbar layout="row" layout-align="center center">
       <h1> Informe os dados da sua viagem </h1>
     </md-toolbar>
@@ -12,15 +8,23 @@
 
 
     <div  layout="row" md-colors="{background: 'myTheme-accent-900'}"   layout-align="center center">
-        Quando
+        Quando {{horaSaida}} ---- {{dataSaida}}
     </div>
-      <div   layout="row"  layout-align="center center">
+      <div layout="row"  layout-align="center center">
           <div layout-gt-xs="row">
             <md-input-container  class="md-block" flex-gt-xs>
-              <label>Data</label>
-              <md-datepicker ng-model="dataSaida"></md-datepicker> 
+               <label>Data</label>
+				<!-- <md-datepicker ng-model="dataSaida"></md-datepicker> -->
+				<input type="date" ng-model="dataSaida"></input>
             </md-input-container>
           </div>
+		  <div layout-gt-xs="row">
+            <md-input-container  class="md-block" flex-gt-xs>
+			<label> Hora </label>
+		    <input type="time" ng-model="horaSaida"></input>
+            </md-input-container>
+
+		  </div>
       </div>
 
 
@@ -51,7 +55,7 @@
 
 
       <div layout-gt-xs="row" align="center">
-        <md-input-container class="md-block" flex-gt-xs>
+        <md-input-container class="md-block flex-gt-xs">
           <md-button class="md-raised md-primary">Procurar</md-button>
         </md-input-container>
       </div> 

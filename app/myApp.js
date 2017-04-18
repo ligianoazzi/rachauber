@@ -1,5 +1,7 @@
-        var myApp = angular.module("myApp", ["ngMaterial", "ui.router"]); /* "mdPickers"*/
+ // https://github.com/alenaksu/mdPickers //
 
+         var myApp = angular.module("myApp", ["ngMaterial", "ui.router"]); 
+ 
 		myApp.config(function($stateProvider, $urlRouterProvider) {
 	    
 	    $urlRouterProvider.otherwise('/home');
@@ -24,6 +26,8 @@
 	        });      	         
 
 		});
+		
+		
 
 		myApp.config(function($mdThemingProvider) {
 		  $mdThemingProvider.theme('myTheme')
