@@ -1,0 +1,8 @@
+1- acessar via CDM
+C:\Users\Ligiano Azzi\Desktop\rachauber
+
+
+2- rodar comando: live-server
+
+
+3- acessar via url no browser: http://localhost:8080/app/#!/home
